@@ -16,7 +16,7 @@ poetry run pytest
         - workflows
     - docs
     - examples
-    - <package name>
+    - \<package name\>
     - test
 
 ## Version control: Git
