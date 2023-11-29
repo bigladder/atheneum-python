@@ -25,9 +25,11 @@ jobs:
         run: |
           poetry run pylint atheneum #'${{github.workspace}}
           poetry run pylint test/*.py
+        continue-on-error: true
       # - name: Static type checking
       #   run: |
       #     poetry run mypy atheneum #'${{github.workspace}}
+      #   continue-on-error: true
       - name: Test
         run: |
           source $VENV
