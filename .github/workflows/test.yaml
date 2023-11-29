@@ -26,10 +26,11 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Lint with Pylint
         run: |
-          poetry run pylint ${{ matrix.path }}
+          poetry run pylint atheneum #'${{github.workspace}}
+          poetry run pylint test/*.py
       # - name: Static type checking
       #   run: |
-      #     poetry run mypy ${{ matrix.path }}
+      #     poetry run mypy atheneum #'${{github.workspace}}
       - name: Test
         run: |
           source $VENV
