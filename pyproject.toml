@@ -14,7 +14,22 @@ python = "^3.8"
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.3"
 pylint = "*"
+autopep8 = "*"
+black = "*"
+mypy = "*"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+
+[tool.autopep8]
+max_line_length = 100
+in-place = true
+recursive = true
+
+[[tool.mypy.overrides]]
+module = "lattice.*"
+disable_error_code = ["annotation-unchecked","import"]
