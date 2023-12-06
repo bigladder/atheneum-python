@@ -31,4 +31,4 @@ check_untyped_defs = true
 
 [[tool.mypy.overrides]]
 module = "atheneum.*"
-disable_error_code = ["annotation-unchecked","import"]
+disable_error_code = ["import"]
