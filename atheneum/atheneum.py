@@ -1,9 +1,9 @@
 """A boilerplate module for Python packate/library design"""
 
-class Atheneum: #pylint:disable=R0903
+class Atheneum: #pylint:disable=too-few-public-methods
     """The atheneum class has all the answers"""
 
-    def __init__(self): #pylint:disable=C0116
+    def __init__(self) -> None:
         pass
 
     def answer(self, exclamation_str):

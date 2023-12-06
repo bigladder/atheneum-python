@@ -1,4 +1,4 @@
-#pylint:disable=C0114
+#pylint:disable=missing-module-docstring
 
 from atheneum import Atheneum
 
