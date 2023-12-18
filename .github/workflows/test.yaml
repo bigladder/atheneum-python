@@ -33,5 +33,5 @@ jobs:
       - name: Test
         run: |
           source $VENV
-          poetry run pytest
+          poetry run python -m pytest
 
