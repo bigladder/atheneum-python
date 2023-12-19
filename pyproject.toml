@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "atheneum"
+name = "pytheneum"
 version = "0.0.0" # Generated from git on CI
 description = "A template for new python packages."
 authors = ["Big Ladder Software"]
@@ -30,5 +30,5 @@ no_implicit_optional = true
 check_untyped_defs = true
 
 [[tool.mypy.overrides]]
-module = "atheneum.*"
+module = "pytheneum.*"
 disable_error_code = ["import"]
