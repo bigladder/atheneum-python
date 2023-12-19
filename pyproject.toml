@@ -6,7 +6,7 @@ authors = ["Big Ladder Software"]
 license = "BSD-3"
 readme = "README.md"
 keywords = ["template"]
-repository = "https://github.com/bigladder/atheneum-python"
+repository = "https://github.com/bigladder/pytheneum"
 
 [tool.poetry.dependencies]
 python = "^3.8"
