@@ -1,19 +1,34 @@
 [tool.poetry]
-name = "atheneum"
+name = "pytheneum"
 version = "0.0.0" # Generated from git on CI
 description = "A template for new python packages."
 authors = ["Big Ladder Software"]
 license = "BSD-3"
 readme = "README.md"
 keywords = ["template"]
-repository = "https://github.com/bigladder/atheneum-python"
+repository = "https://github.com/bigladder/pytheneum"
 
 [tool.poetry.dependencies]
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.3"
+pylint = "*"
+black = "*"
+mypy = "*"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.mypy]
+disallow_incomplete_defs = true
+no_implicit_optional = true
+check_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = "pytheneum.*"
+disable_error_code = ["import"]

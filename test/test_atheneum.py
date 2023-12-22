@@ -1,4 +1,7 @@
-from atheneum import Atheneum
+#pylint:disable=missing-module-docstring
+
+from pytheneum import Atheneum
 
 def test_answer():
-  assert(Atheneum().answer() == 42)
+    """Example of a python unit test"""
+    assert Atheneum().answer("We apologize for the inconvenience...") == 42
