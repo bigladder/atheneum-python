@@ -6,12 +6,12 @@ class Atheneum: #pylint:disable=too-few-public-methods
     def __init__(self) -> None:
         pass
 
-    def answer(self, exclamation_str):
+    def answer(self, exclamation):
         """
         Return the answer to Life, the Universe, and Everything.
 
-        :param exclamation_str:     Print how you feel about the answer
+        :param exclamation:     Print how you feel about the answer
         """
 
-        print(exclamation_str)
+        print(exclamation)
         return 42
